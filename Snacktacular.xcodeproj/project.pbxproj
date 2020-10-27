@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		280B608E9AAF58B7F10FB1D9 /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4213F3F38E6D826FFB58CFE /* Pods_Snacktacular.framework */; };
 		3F9A8E5B2547B9E400069B59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A8E5A2547B9E400069B59 /* GoogleService-Info.plist */; };
+		3F9A8E632547C35A00069B59 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E622547C35A00069B59 /* SpotListViewController.swift */; };
+		3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */; };
+		3F9A8E6D2547C80F00069B59 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */; };
 		3FD30AD42547A3F10090E936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD32547A3F10090E936 /* AppDelegate.swift */; };
 		3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD52547A3F10090E936 /* SceneDelegate.swift */; };
 		3FD30AD82547A3F10090E936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD72547A3F10090E936 /* LoginViewController.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		3F9A8E5A2547B9E400069B59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3F9A8E622547C35A00069B59 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
+		3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		3FD30AD02547A3F10090E936 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD30AD32547A3F10090E936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD30AD52547A3F10090E936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				3FD30AD32547A3F10090E936 /* AppDelegate.swift */,
 				3FD30AD52547A3F10090E936 /* SceneDelegate.swift */,
 				3FD30AD72547A3F10090E936 /* LoginViewController.swift */,
+				3F9A8E622547C35A00069B59 /* SpotListViewController.swift */,
+				3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */,
+				3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */,
 				3FD30AD92547A3F10090E936 /* Main.storyboard */,
 				3FD30ADC2547A3F60090E936 /* Assets.xcassets */,
 				3FD30ADE2547A3F60090E936 /* LaunchScreen.storyboard */,
@@ -348,8 +357,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9A8E632547C35A00069B59 /* SpotListViewController.swift in Sources */,
 				3FD30AD82547A3F10090E936 /* LoginViewController.swift in Sources */,
 				3FD30AD42547A3F10090E936 /* AppDelegate.swift in Sources */,
+				3F9A8E6D2547C80F00069B59 /* SpotDetailViewController.swift in Sources */,
+				3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */,
 				3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
