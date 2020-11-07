@@ -239,14 +239,20 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZD-Mi-zqf">
+                                        <rect key="frame" x="0.0" y="62" width="320" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="TZD-Mi-zqf" firstAttribute="leading" secondItem="0KH-Ie-Jw4" secondAttribute="leading" id="8Cv-79-HQX"/>
+                                    <constraint firstItem="TZD-Mi-zqf" firstAttribute="top" secondItem="jib-B6-Iq5" secondAttribute="bottom" constant="2" id="DdY-HQ-pJs"/>
                                     <constraint firstAttribute="trailing" secondItem="AiJ-YY-nyP" secondAttribute="trailing" constant="8" id="HkQ-WP-xN9"/>
                                     <constraint firstItem="y2q-rX-qln" firstAttribute="leading" secondItem="0KH-Ie-Jw4" secondAttribute="leading" id="NS2-hQ-euW"/>
                                     <constraint firstAttribute="trailing" secondItem="y2q-rX-qln" secondAttribute="trailing" id="Prl-Nq-eUs"/>
                                     <constraint firstItem="jQj-Zl-fXA" firstAttribute="top" secondItem="y2q-rX-qln" secondAttribute="bottom" constant="4" id="T8o-tq-CWt"/>
                                     <constraint firstAttribute="height" constant="380" id="ZMK-Fm-icg"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZD-Mi-zqf" secondAttribute="trailing" id="ZkU-zr-RxB"/>
                                     <constraint firstItem="jTx-Pv-vqU" firstAttribute="top" secondItem="y2q-rX-qln" secondAttribute="bottom" constant="8" id="Zmd-s5-onw"/>
                                     <constraint firstItem="cPR-nJ-hMU" firstAttribute="top" secondItem="y2q-rX-qln" secondAttribute="bottom" constant="6" id="aRR-og-OgJ"/>
                                     <constraint firstItem="AiJ-YY-nyP" firstAttribute="top" secondItem="y2q-rX-qln" secondAttribute="bottom" constant="4" id="adO-Ii-fwu"/>
@@ -254,6 +260,7 @@
                                     <constraint firstItem="y2q-rX-qln" firstAttribute="top" secondItem="0KH-Ie-Jw4" secondAttribute="top" constant="242" id="dTk-CK-OcF"/>
                                     <constraint firstAttribute="trailing" secondItem="WS7-qn-GcG" secondAttribute="trailing" constant="8" id="hvr-0s-QUS"/>
                                     <constraint firstAttribute="trailing" secondItem="jib-B6-Iq5" secondAttribute="trailing" constant="8" id="iGR-sW-vj8"/>
+                                    <constraint firstItem="y2q-rX-qln" firstAttribute="top" secondItem="TZD-Mi-zqf" secondAttribute="bottom" id="mI8-g9-6iv"/>
                                     <constraint firstItem="jib-B6-Iq5" firstAttribute="leading" secondItem="0KH-Ie-Jw4" secondAttribute="leading" constant="8" id="npM-im-3fh"/>
                                     <constraint firstItem="WS7-qn-GcG" firstAttribute="leading" secondItem="0KH-Ie-Jw4" secondAttribute="leading" constant="8" id="nwc-C1-d9B"/>
                                     <constraint firstItem="cPR-nJ-hMU" firstAttribute="leading" secondItem="jTx-Pv-vqU" secondAttribute="trailing" id="tq6-cA-Q5P"/>
@@ -294,6 +301,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="jib-B6-Iq5" id="hGI-s8-3oc"/>
+                        <outlet property="mapView" destination="TZD-Mi-zqf" id="OMo-yi-wfE"/>
                         <outlet property="nameTextField" destination="WS7-qn-GcG" id="UnJ-uD-CJY"/>
                         <outlet property="ratingLabel" destination="cPR-nJ-hMU" id="dGW-7h-62e"/>
                     </connections>
