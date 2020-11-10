@@ -12,6 +12,7 @@
 		3F424F7A25533B17009FE7DC /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F424F7925533B17009FE7DC /* UIViewController+alert.swift */; };
 		3F424F9D25536498009FE7DC /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F424F9C25536498009FE7DC /* Spots.swift */; };
 		3F424FA22555FDE1009FE7DC /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F424FA12555FDE1009FE7DC /* APIKeys.swift */; };
+		3F4E0320255B591600A5F651 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */; };
 		3F5448A32548CAD700784271 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5448A22548CAD700784271 /* Spot.swift */; };
 		3F9A8E632547C35A00069B59 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E622547C35A00069B59 /* SpotListViewController.swift */; };
 		3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */; };
@@ -48,6 +49,7 @@
 		3F424F7925533B17009FE7DC /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		3F424F9C25536498009FE7DC /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		3F424FA12555FDE1009FE7DC /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		3F5448A22548CAD700784271 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		3F9A8E622547C35A00069B59 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				3F9A8E622547C35A00069B59 /* SpotListViewController.swift */,
 				3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */,
 				3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */,
+				3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */,
 				3F424F7925533B17009FE7DC /* UIViewController+alert.swift */,
 				3F424FA12555FDE1009FE7DC /* APIKeys.swift */,
 				3FD30AD92547A3F10090E936 /* Main.storyboard */,
@@ -373,6 +376,7 @@
 				3FD30AD82547A3F10090E936 /* LoginViewController.swift in Sources */,
 				3FD30AD42547A3F10090E936 /* AppDelegate.swift in Sources */,
 				3F9A8E6D2547C80F00069B59 /* SpotDetailViewController.swift in Sources */,
+				3F4E0320255B591600A5F651 /* ReviewTableViewController.swift in Sources */,
 				3F424F9D25536498009FE7DC /* Spots.swift in Sources */,
 				3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */,
 				3F424FA22555FDE1009FE7DC /* APIKeys.swift in Sources */,
