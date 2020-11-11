@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,7 +34,7 @@
             <objects>
                 <viewController id="g4w-Ze-x0r" customClass="SpotListViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvq-1i-gEE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="el8-1z-kE9">
@@ -369,6 +369,11 @@
                                         <connections>
                                             <outlet property="reviewTextLabel" destination="4KQ-S1-gku" id="WIw-8G-T7H"/>
                                             <outlet property="reviewTitleLabel" destination="p57-mT-36N" id="Fdd-YY-obw"/>
+                                            <outletCollection property="starImageCollection" destination="Kp9-vl-jt2" collectionClass="NSMutableArray" id="HG9-Pm-tdJ"/>
+                                            <outletCollection property="starImageCollection" destination="kMz-nT-7cK" collectionClass="NSMutableArray" id="JIi-g8-7hl"/>
+                                            <outletCollection property="starImageCollection" destination="Y3b-kT-EcR" collectionClass="NSMutableArray" id="NbV-eD-rxH"/>
+                                            <outletCollection property="starImageCollection" destination="c2j-lE-qok" collectionClass="NSMutableArray" id="0jA-H2-mLa"/>
+                                            <outletCollection property="starImageCollection" destination="Vyf-YK-dUN" collectionClass="NSMutableArray" id="7ad-U8-Sxw"/>
                                             <segue destination="gTK-AP-G9R" kind="show" identifier="ShowReview" id="j3a-gm-Pfj"/>
                                         </connections>
                                     </tableViewCell>
@@ -510,6 +515,9 @@
                                                             <state key="normal" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="gTK-AP-G9R" eventType="touchUpInside" id="XqE-2L-y1u"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-j8-sNz">
                                                             <rect key="frame" x="42" y="0.0" width="40" height="40"/>
@@ -522,6 +530,9 @@
                                                             <state key="normal" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="gTK-AP-G9R" eventType="touchUpInside" id="Lfu-vg-TWn"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-TV-Qjx">
                                                             <rect key="frame" x="84" y="0.0" width="40" height="40"/>
@@ -534,6 +545,9 @@
                                                             <state key="normal" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="gTK-AP-G9R" eventType="touchUpInside" id="ipb-JQ-unB"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdG-4g-E18">
                                                             <rect key="frame" x="126" y="0.0" width="40" height="40"/>
@@ -546,6 +560,9 @@
                                                             <state key="normal" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="gTK-AP-G9R" eventType="touchUpInside" id="6wc-dL-agu"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jf-fx-ej1">
                                                             <rect key="frame" x="168" y="0.0" width="40" height="40"/>
@@ -558,6 +575,9 @@
                                                             <state key="normal" image="star" catalog="system">
                                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="starButtonPressed:" destination="gTK-AP-G9R" eventType="touchUpInside" id="yy3-Ud-yLY"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -740,6 +760,11 @@
                         <outlet property="reviewTextView" destination="g5F-ht-nB3" id="Kfm-OQ-YpA"/>
                         <outlet property="reviewTitleField" destination="ech-nD-RCg" id="IME-zM-FpO"/>
                         <outlet property="saveBarButton" destination="L4U-SD-JCe" id="cBH-dh-2Aq"/>
+                        <outletCollection property="starButtonCollection" destination="ynm-pc-47P" collectionClass="NSMutableArray" id="r2f-mC-7Iv"/>
+                        <outletCollection property="starButtonCollection" destination="DAC-j8-sNz" collectionClass="NSMutableArray" id="h19-kB-K8Z"/>
+                        <outletCollection property="starButtonCollection" destination="t9e-TV-Qjx" collectionClass="NSMutableArray" id="Bef-AD-25B"/>
+                        <outletCollection property="starButtonCollection" destination="pdG-4g-E18" collectionClass="NSMutableArray" id="Mgl-Hs-nuy"/>
+                        <outletCollection property="starButtonCollection" destination="2Jf-fx-ej1" collectionClass="NSMutableArray" id="k4q-VJ-AZl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYS-4S-rnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
