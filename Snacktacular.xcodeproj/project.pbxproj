@@ -15,6 +15,7 @@
 		3F4E0320255B591600A5F651 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */; };
 		3F4E0325255B691700A5F651 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E0324255B691700A5F651 /* Review.swift */; };
 		3F4E036C255B744300A5F651 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E036B255B744300A5F651 /* Reviews.swift */; };
+		3F4E0392255B9C6800A5F651 /* SpotReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E0391255B9C6800A5F651 /* SpotReviewTableViewCell.swift */; };
 		3F5448A32548CAD700784271 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5448A22548CAD700784271 /* Spot.swift */; };
 		3F9A8E632547C35A00069B59 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E622547C35A00069B59 /* SpotListViewController.swift */; };
 		3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */; };
@@ -54,6 +55,7 @@
 		3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		3F4E0324255B691700A5F651 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		3F4E036B255B744300A5F651 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		3F4E0391255B9C6800A5F651 /* SpotReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewTableViewCell.swift; sourceTree = "<group>"; };
 		3F5448A22548CAD700784271 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		3F9A8E622547C35A00069B59 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				3F9A8E622547C35A00069B59 /* SpotListViewController.swift */,
 				3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */,
 				3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */,
+				3F4E0391255B9C6800A5F651 /* SpotReviewTableViewCell.swift */,
 				3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */,
 				3F424F7925533B17009FE7DC /* UIViewController+alert.swift */,
 				3F424FA12555FDE1009FE7DC /* APIKeys.swift */,
@@ -387,6 +390,7 @@
 				3F4E0325255B691700A5F651 /* Review.swift in Sources */,
 				3F424F9D25536498009FE7DC /* Spots.swift in Sources */,
 				3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */,
+				3F4E0392255B9C6800A5F651 /* SpotReviewTableViewCell.swift in Sources */,
 				3F424FA22555FDE1009FE7DC /* APIKeys.swift in Sources */,
 				3F5448A32548CAD700784271 /* Spot.swift in Sources */,
 				3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */,
