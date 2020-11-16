@@ -23,6 +23,7 @@
 		3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */; };
 		3F9A8E6D2547C80F00069B59 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */; };
 		3FCA0BC82560430E0014A25C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0BC72560430E0014A25C /* PhotoViewController.swift */; };
+		3FCA0BEE256057B10014A25C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0BED256057B10014A25C /* Photo.swift */; };
 		3FD30AD42547A3F10090E936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD32547A3F10090E936 /* AppDelegate.swift */; };
 		3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD52547A3F10090E936 /* SceneDelegate.swift */; };
 		3FD30AD82547A3F10090E936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD30AD72547A3F10090E936 /* LoginViewController.swift */; };
@@ -66,6 +67,7 @@
 		3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		3F9A8E6C2547C80F00069B59 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		3FCA0BC72560430E0014A25C /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		3FCA0BED256057B10014A25C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		3FD30AD02547A3F10090E936 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD30AD32547A3F10090E936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD30AD52547A3F10090E936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3F424F9C25536498009FE7DC /* Spots.swift */,
 				3F4E0324255B691700A5F651 /* Review.swift */,
 				3F4E036B255B744300A5F651 /* Reviews.swift */,
+				3FCA0BED256057B10014A25C /* Photo.swift */,
 				3FD30AD72547A3F10090E936 /* LoginViewController.swift */,
 				3F9A8E622547C35A00069B59 /* SpotListViewController.swift */,
 				3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */,
@@ -402,6 +405,7 @@
 				3F9A8E682547C52000069B59 /* SpotTableViewCell.swift in Sources */,
 				3FCA0BC82560430E0014A25C /* PhotoViewController.swift in Sources */,
 				3F4E0392255B9C6800A5F651 /* SpotReviewTableViewCell.swift in Sources */,
+				3FCA0BEE256057B10014A25C /* Photo.swift in Sources */,
 				3F424FA22555FDE1009FE7DC /* APIKeys.swift in Sources */,
 				3F5448A32548CAD700784271 /* Spot.swift in Sources */,
 				3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */,
