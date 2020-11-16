@@ -80,16 +80,28 @@ class Photo {
         uploadTask.observe(.success) { (snapshot) in
             print("Upload to Firebase Storage was succesful")
             
-            // create the dictionary representing data we want to save
-            let dataToSave = self.dictionary
-            let ref = db.collection("spots").document(spot.documentID).collection("photos").document(self.documentID)
-            ref.setData(dataToSave) { (error) in
+            storageRef.downloadURL { (url, error) in
                 guard error == nil else {
-                    print("😡 ERROR: updating document \(error!.localizedDescription)")
+                    print("ERROR: couldn't create a download \(error!.localizedDescription)")
                     return completion(false)
                 }
-                print("🥳 updated document: \(self.documentID) in spot: \(spot.documentID)") // it WORKED!
-                completion(true)
+                guard let url = url else {
+                    print("ERROR: url was nil, this should not have happened because we've already shown there was no error")
+                    return completion(false)
+                }
+                self.photoURL = "\(url)"
+                
+                // create the dictionary representing data we want to save
+                let dataToSave = self.dictionary
+                let ref = db.collection("spots").document(spot.documentID).collection("photos").document(self.documentID)
+                ref.setData(dataToSave) { (error) in
+                    guard error == nil else {
+                        print("😡 ERROR: updating document \(error!.localizedDescription)")
+                        return completion(false)
+                    }
+                    print("🥳 updated document: \(self.documentID) in spot: \(spot.documentID)") // it WORKED!
+                    completion(true)
+                }
             }
         }
         
@@ -98,6 +110,24 @@ class Photo {
                 print("ERROR: upload task for file \(self.documentID) failed, in spot \(spot.documentID), with error \(error.localizedDescription)")
             }
             completion(false)
+        }
+    }
+    
+    func loadImage(spot: Spot, completion: @escaping (Bool) -> ()) {
+        guard spot.documentID != "" else {
+            print("Error: did not pass a valid spot into LoadImage")
+            return
+        }
+        let storage = Storage.storage()
+        let storageRef = storage.reference().child(spot.documentID).child(documentID)
+        storageRef.getData(maxSize: 25 * 1024 * 1024) { (data, error) in
+            if let error = error {
+                print("ERROR: an error occurred while reading data from file  ref: \(storageRef) error = \(error.localizedDescription)")
+                return completion(false)
+            } else {
+                self.image = UIImage(data: data!) ?? UIImage()
+                return completion(true)
+            }
         }
     }
 }
