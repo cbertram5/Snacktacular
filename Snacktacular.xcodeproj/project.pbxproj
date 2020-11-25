@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		280B608E9AAF58B7F10FB1D9 /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4213F3F38E6D826FFB58CFE /* Pods_Snacktacular.framework */; };
+		3F141164256DD84700F22839 /* SnackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F141163256DD84700F22839 /* SnackUser.swift */; };
+		3F141169256DE97400F22839 /* SnackUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F141168256DE97400F22839 /* SnackUserViewController.swift */; };
+		3F14116E256DE9A500F22839 /* SnackUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14116D256DE9A500F22839 /* SnackUserTableViewCell.swift */; };
 		3F424F7225532EB6009FE7DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F424F7125532EB6009FE7DC /* GoogleService-Info.plist */; };
 		3F424F7A25533B17009FE7DC /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F424F7925533B17009FE7DC /* UIViewController+alert.swift */; };
 		3F424F9D25536498009FE7DC /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F424F9C25536498009FE7DC /* Spots.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F141163256DD84700F22839 /* SnackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUser.swift; sourceTree = "<group>"; };
+		3F141168256DE97400F22839 /* SnackUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUserViewController.swift; sourceTree = "<group>"; };
+		3F14116D256DE9A500F22839 /* SnackUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUserTableViewCell.swift; sourceTree = "<group>"; };
 		3F424F7125532EB6009FE7DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3F424F7925533B17009FE7DC /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		3F424F9C25536498009FE7DC /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				3F4E036B255B744300A5F651 /* Reviews.swift */,
 				3FCA0BED256057B10014A25C /* Photo.swift */,
 				3FCA0C77256248B00014A25C /* Photos.swift */,
+				3F141163256DD84700F22839 /* SnackUser.swift */,
 				3FD30AD72547A3F10090E936 /* LoginViewController.swift */,
 				3F9A8E622547C35A00069B59 /* SpotListViewController.swift */,
 				3F9A8E672547C52000069B59 /* SpotTableViewCell.swift */,
@@ -158,6 +165,8 @@
 				3FCA0C7C25624D2C0014A25C /* SpotPhotoCollectionViewCell.swift */,
 				3F4E031F255B591600A5F651 /* ReviewTableViewController.swift */,
 				3FCA0BC72560430E0014A25C /* PhotoViewController.swift */,
+				3F141168256DE97400F22839 /* SnackUserViewController.swift */,
+				3F14116D256DE9A500F22839 /* SnackUserTableViewCell.swift */,
 				3F424F7925533B17009FE7DC /* UIViewController+alert.swift */,
 				3F713B06255CF28F00791667 /* UIView+addBorder.swift */,
 				3F713B2C255CF31F00791667 /* UIBarButtonItem+hide.swift */,
@@ -413,9 +422,12 @@
 				3FCA0BC82560430E0014A25C /* PhotoViewController.swift in Sources */,
 				3F4E0392255B9C6800A5F651 /* SpotReviewTableViewCell.swift in Sources */,
 				3FCA0BEE256057B10014A25C /* Photo.swift in Sources */,
+				3F14116E256DE9A500F22839 /* SnackUserTableViewCell.swift in Sources */,
+				3F141169256DE97400F22839 /* SnackUserViewController.swift in Sources */,
 				3F424FA22555FDE1009FE7DC /* APIKeys.swift in Sources */,
 				3F5448A32548CAD700784271 /* Spot.swift in Sources */,
 				3FD30AD62547A3F10090E936 /* SceneDelegate.swift in Sources */,
+				3F141164256DD84700F22839 /* SnackUser.swift in Sources */,
 				3FCA0C7D25624D2C0014A25C /* SpotPhotoCollectionViewCell.swift in Sources */,
 				3F424F7A25533B17009FE7DC /* UIViewController+alert.swift in Sources */,
 				3F713B07255CF28F00791667 /* UIView+addBorder.swift in Sources */,

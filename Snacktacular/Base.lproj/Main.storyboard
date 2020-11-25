@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,7 +34,7 @@
             <objects>
                 <viewController id="g4w-Ze-x0r" customClass="SpotListViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tvq-1i-gEE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="el8-1z-kE9">
@@ -125,11 +125,19 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="loO-p0-SHb">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="6zI-Co-e3q">
-                            <connections>
-                                <segue destination="Q0i-fo-Qwn" kind="unwind" identifier="SignOutUnwind" animates="NO" unwindAction="unwindSignOutPressedWithSegue:" id="XDo-qq-Zwq"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Sign Out" id="6zI-Co-e3q">
+                                <connections>
+                                    <segue destination="Q0i-fo-Qwn" kind="unwind" identifier="SignOutUnwind" animates="NO" unwindAction="unwindSignOutPressedWithSegue:" id="XDo-qq-Zwq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="person.3" catalog="system" id="Dw0-fb-BN9">
+                                <connections>
+                                    <action selector="usersButtonPressed:" destination="g4w-Ze-x0r" id="d8V-Fs-jmJ"/>
+                                    <segue destination="rSQ-LD-Vrr" kind="show" identifier="ShowUsers" id="bJt-Pw-4jY"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wcG-af-QnU">
                             <connections>
                                 <segue destination="vCJ-cE-rdV" kind="presentation" identifier="AddDetail" modalPresentationStyle="fullScreen" id="zw1-4B-W7p"/>
@@ -146,6 +154,108 @@
                 <exit id="Q0i-fo-Qwn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1976.25" y="103.52112676056338"/>
+        </scene>
+        <!--Snack User View Controller-->
+        <scene sceneID="oiU-ew-rzF">
+            <objects>
+                <viewController id="rSQ-LD-Vrr" customClass="SnackUserViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HvX-ra-RlU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rfm-xQ-jBv">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="smj-IO-ugh" customClass="SnackUserTableViewCell" customModule="Snacktacular" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="smj-IO-ugh" id="HOE-4v-155">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-q5-wvk">
+                                                    <rect key="frame" x="8" y="5.5" width="70" height="69"/>
+                                                    <color key="tintColor" name="PrimaryColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="E78-QK-OaI"/>
+                                                        <constraint firstAttribute="width" constant="70" id="thh-rH-dVY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DisplayName Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecl-YQ-iVt">
+                                                    <rect key="frame" x="86" y="5" width="226" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="1Lm-mu-dTE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bertramc@bc.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhF-dh-oow">
+                                                    <rect key="frame" x="86" y="30" width="226" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="H0o-Mm-bqr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Since:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbS-2Y-4hW">
+                                                    <rect key="frame" x="86" y="55" width="70" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="9rc-Xk-mQD"/>
+                                                        <constraint firstAttribute="width" constant="70" id="rin-y2-Qik"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 31, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-Pu-peq">
+                                                    <rect key="frame" x="164" y="54" width="148" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="fSL-Yt-DUv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GhF-dh-oow" firstAttribute="top" secondItem="Ecl-YQ-iVt" secondAttribute="bottom" constant="4" id="2wa-4v-1kx"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ecl-YQ-iVt" secondAttribute="trailing" constant="8" id="8So-03-rky"/>
+                                                <constraint firstItem="Nht-q5-wvk" firstAttribute="leading" secondItem="HOE-4v-155" secondAttribute="leading" constant="8" id="D7C-ds-0yo"/>
+                                                <constraint firstAttribute="trailing" secondItem="jLv-Pu-peq" secondAttribute="trailing" constant="8" id="E5i-ps-EHm"/>
+                                                <constraint firstItem="GhF-dh-oow" firstAttribute="trailing" secondItem="HOE-4v-155" secondAttribute="trailingMargin" constant="8" id="F1Q-FB-jy5"/>
+                                                <constraint firstItem="GhF-dh-oow" firstAttribute="leading" secondItem="Nht-q5-wvk" secondAttribute="trailing" constant="8" id="F6W-dx-dvx"/>
+                                                <constraint firstItem="fbS-2Y-4hW" firstAttribute="top" secondItem="GhF-dh-oow" secondAttribute="bottom" constant="4" id="KLs-Aw-Tec"/>
+                                                <constraint firstItem="jLv-Pu-peq" firstAttribute="top" secondItem="GhF-dh-oow" secondAttribute="bottom" constant="3" id="LCa-BT-0YM"/>
+                                                <constraint firstItem="Ecl-YQ-iVt" firstAttribute="leading" secondItem="Nht-q5-wvk" secondAttribute="trailing" constant="8" id="Mq6-sd-HaN"/>
+                                                <constraint firstItem="fbS-2Y-4hW" firstAttribute="leading" secondItem="Nht-q5-wvk" secondAttribute="trailing" constant="8" id="PHk-dO-ekz"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nht-q5-wvk" secondAttribute="bottom" constant="5" id="c2a-He-AQR"/>
+                                                <constraint firstItem="jLv-Pu-peq" firstAttribute="leading" secondItem="fbS-2Y-4hW" secondAttribute="trailing" constant="8" id="f7O-GN-sim"/>
+                                                <constraint firstItem="Ecl-YQ-iVt" firstAttribute="top" secondItem="HOE-4v-155" secondAttribute="top" constant="5" id="lY2-BG-SLX"/>
+                                                <constraint firstItem="Nht-q5-wvk" firstAttribute="top" secondItem="HOE-4v-155" secondAttribute="top" constant="5" id="ztA-yY-Wd6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NXm-oQ-gZ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rfm-xQ-jBv" firstAttribute="leading" secondItem="NXm-oQ-gZ1" secondAttribute="leading" id="2jx-4r-svJ"/>
+                            <constraint firstItem="NXm-oQ-gZ1" firstAttribute="bottom" secondItem="rfm-xQ-jBv" secondAttribute="bottom" id="7Cl-3v-8ka"/>
+                            <constraint firstItem="NXm-oQ-gZ1" firstAttribute="trailing" secondItem="rfm-xQ-jBv" secondAttribute="trailing" id="d0G-cy-nXS"/>
+                            <constraint firstItem="rfm-xQ-jBv" firstAttribute="top" secondItem="NXm-oQ-gZ1" secondAttribute="top" id="tGm-6P-Eal"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xaw-JQ-m0C"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zf-iB-81Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2840.625" y="534.50704225352115"/>
         </scene>
         <!--Spot Detail View Controller-->
         <scene sceneID="01W-Sp-JHy">
@@ -807,7 +917,7 @@
             <objects>
                 <viewController id="nZN-lQ-DX3" customClass="PhotoViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vf5-hJ-qqf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9SM-EI-oCr">
@@ -1012,11 +1122,13 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wmK-Vb-mKf"/>
-        <segue reference="j3a-gm-Pfj"/>
-        <segue reference="T1k-xS-eeO"/>
+        <segue reference="enB-zI-b1L"/>
+        <segue reference="AOM-2k-23Y"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="PrimaryColor">
